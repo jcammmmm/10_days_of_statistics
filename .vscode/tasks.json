@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            // "command": "Start-Process -FilePath ./launch.bat", /* add an input() to hold the terminal */
+            // "command": "Start-Process python ./some_math/hypothesis-event-rel.py",
+            "command": "./launch.bat",
+            
+            // "command": "python ${file}",
+            "presentation": { // uncomment this fi you want to show the integrated terminal
+                "reveal": "never"
+            },
+            
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        
+    ]
+}
